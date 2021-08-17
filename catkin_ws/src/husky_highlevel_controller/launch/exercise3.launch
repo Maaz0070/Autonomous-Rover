@@ -1,0 +1,21 @@
+
+<launch>
+  <arg name="world" default="singlePillar.world"/>
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinetic_enabled" default="true"/>
+
+   <inlcude file="$(find 
+   husky_description)/launch/description.launch">
+    <arg name="robot_namespace" value="$(arg robot_namespace)"/>
+    <arg name="laser enabled" default="$(arg laser_enabled)"/>
+    <arg name="kinetic_enabled" default="$(arg kinetic_enabled)"/>
+    <arg name="urdf_extras" default="$(arg urd_extras)"/>
+    </inlcude>
+
+	<include file="$(find husky_gazebo)/launch/husky_empty_world.launch">
+      <arg name="world_name" value="$(find husky_highlevel_controller)/worlds/$(arg world)"/>  
+	  </include> 
+
+	 
+
+</launch>

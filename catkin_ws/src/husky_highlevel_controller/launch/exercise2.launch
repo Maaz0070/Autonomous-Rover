@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="world_name" default="launch/singlePillar.world"/>
+
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinetic_enabled" default="true"/>
+  <!--<arg name="realsense_enabled" default="false"/> -->
+
+  <!--<arg name="use_sim_time" default="true"/>
+  <arg name="world" default="gazebo_ros_range"/>
+  <arg name="debug" default="false"/>
+  <arg name="physics" default="ode"/>
+  <arg name="laser_enabled" value="true"/> -->
+
+  <!--<group if="$(arg use_sim_time)">
+     <param name="/use_sim_time" value="true" />
+  </group> -->
+
+  <!--<include file="$(find gazebo_ros)/launch/empty_world.launch">
+   <arg name="world_name" value="$(arg world_name)/test/test_worlds/$(arg world).world"/>
+   <arg name="debug" value="$(arg debug)"/>
+   <arg name="physics" value="$(arg physics)"/> -->
+   
+    
+ <!--</include>--> 
+	<include file="$(find husky_highlevel_controller)/worlds/singlePillar.world">
+	    <arg name="world_name" value="$(arg world_name)"/>  
+	    <arg name="paused" value="false"/>
+	    <arg name="use_sim_time" value="true"/>
+	    <arg name="gui" value="true"/>
+	    <arg name="headless" value="false"/>
+	    <arg name="debug" value="false"/>
+	  </include> 
+
+	 <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+	    <arg name="laser_enabled" value="$(arg laser_enabled)"/> 
+          <!--  <arg name="kinetic_enabled" value="$(arg kinetic_enabled)"> -->
+
+	  </include> 
+
+</launch>
