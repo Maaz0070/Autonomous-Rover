@@ -17,6 +17,10 @@ The following **additional** features are implemented:
 - [x] Subscribers and Publishers are implemented (Python files) to read data from rover such as laser scan values, distance from object, speed, etc.
 
 ##Video Walkthrough of basic features:
+
+- ![Sample Gif](https://i.imgur.com/7T2Aa2a.gif)
+- +<img src="/art/sample.gif?raw=true" width="200px">
+
 <img src='https://i.imgur.com/7T2Aa2a.gif' title='Video Walkthriough' width='' alt='Basic features' />
 
 - [x] Here the Rover locates the pillar and autonomously sets the speed and direction to reach the pillar while avoiding obstacles
