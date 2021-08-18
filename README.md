@@ -13,8 +13,14 @@ The following functionality is completed:
 
 The following **additional** features are implemented:
 
-- [ ] Teleop twist Keyboard is implemented (C++ file) to manually take control of Rover in situations.
-- [ ] Subscribers and Publishers are implemented (Python files) to read data from rover such as laser scan values, distance from object, speed, etc.
+- [x] Teleop twist Keyboard is implemented (C++ file) to manually take control of Rover in situations.
+- [x] Subscribers and Publishers are implemented (Python files) to read data from rover such as laser scan values, distance from object, speed, etc.
+
+##Video Walkthrough of basic features:
+<img src='https://i.imgur.com/7T2Aa2a.gif' title='Video Walkthriough' width='' alt='Basic features' />
+
+- [x] Here the Rover locates the pillar and autonomously sets the speed and direction to reach the pillar while avoiding obstacles
+- [x] Terminal on bottom right is running a ROS node Python file which is reading all the sensor data of the rover in real time
 
 ##ROS Master, Publishers, Subscribers overview
 
