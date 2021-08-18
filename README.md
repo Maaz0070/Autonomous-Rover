@@ -1,6 +1,6 @@
 # Rover
 
-This is a lidar-based self-driving rover which autonomously drives to a specified object.
+This is a lidar-based self-driving rover which autonomously drives to a specified object using the Robot Operating System(R.O.S.)
 
 
 ## User Stories
