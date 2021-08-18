@@ -18,10 +18,7 @@ The following **additional** features are implemented:
 
 ##Video Walkthrough of basic features:
 
-- ![Sample Gif](https://i.imgur.com/7T2Aa2a.gif)
-- +<img src="/art/sample.gif?raw=true" width="200px">
-
-<img src='https://i.imgur.com/7T2Aa2a.gif' title='Video Walkthriough' width='' alt='Basic features' />
+<img src='https://i.imgur.com/aMuoqij.gif' title='Video Walkthriough' width='' alt='Basic features' />
 
 - [x] Here the Rover locates the pillar and autonomously sets the speed and direction to reach the pillar while avoiding obstacles
 - [x] Terminal on bottom right is running a ROS node Python file which is reading all the sensor data of the rover in real time
